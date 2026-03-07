@@ -7,7 +7,7 @@ const Card = (props) => {
       <div>
         <div className="nav">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5OkW9RkLNurdw_VTuB4jP8c1wU5wZaVOsLA&s"
+            src={props.logo}
             alt=""
           />
           <button>
@@ -17,20 +17,20 @@ const Card = (props) => {
 
         <div className="card-content">
           <h3>
-            Amazon <span>5 Days ago</span>
+           {props.name}<span>{props.post}</span>
           </h3>
           <h2>Senior UI/UX Designer</h2>
           <div className="job-status">
-            <h4>Part Time</h4>
-            <h4>Senior Level</h4>
+            <h4>{props.tag1}</h4>
+            <h4>{props.tag2}</h4>
           </div>
         </div>
       </div>
 
       <div className="bottom">
         <div>
-          <h3>$120/hr</h3>
-          <p>Mumbai, India</p>
+          <h3>{props.pay}</h3>
+          <p>{props.loc}</p>
         </div>
         <div>
           <button>Apply Now</button>
