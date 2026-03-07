@@ -1,0 +1,99 @@
+*::after,*::before{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+    background-color: black;
+}
+.parent{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+ padding: 30px; 
+ flex-wrap: wrap;
+}
+.card{
+  height: 330px;
+  width: 250px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px; */
+  margin-bottom: 40px;
+}
+.card img{
+  height: 40px;
+  width: 40px;
+   border: 1px solid black;
+  border-radius: 50%;
+}
+.nav button{
+  display: flex;
+  align-items: center;
+  padding: 3px 7px;
+  font-size: 14px;
+  border: 1px solid rgb(205, 200, 200);
+  border-radius: 3px;
+  gap: 4px;
+}
+.card-content h3{
+  font-size: 16px;
+  font-weight: 600;
+
+}
+.card-content span{
+  font-size: 10px;
+  font-weight: 400;
+}
+.card-content h2{
+  font-size: 19px;
+  font-weight: 700
+}
+.job-status{
+  display: flex;
+  gap: 12px;
+}
+.job-status h4{
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid rgb(151, 149, 149);
+  padding: 3px 6px;
+  border-radius: 4px;
+  background-color: rgb(217, 216, 216);
+  color:rgb(11, 11, 11) ;
+  margin-top: 12px;
+  
+}
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #908a8a ;
+  padding: 10px 5px;
+}
+.bottom button{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
