@@ -83,15 +83,18 @@ const App = () => {
       pay: "$40/hr",
       location: "Bangalore, India",
     },
+    
   ];
 
   return (
     <div className="parent">
-      {jobOpenings.map(function (elem) {
-        return <Card 
+      {jobOpenings.map(function (elem , idx) {
+        return <div key={idx}>
+          <Card 
         logo={elem.brandlogo}
         name={elem.name} post={elem.datePosted} 
-        tag1={elem.tag1} tag2={elem.tag2} pay={elem.pay} loc={elem.location}/>;
+        tag1={elem.tag1} tag2={elem.tag2} pay={elem.pay} loc={elem.location}/>
+        </div>
       })}
     </div>
   );

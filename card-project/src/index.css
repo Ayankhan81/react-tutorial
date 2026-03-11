@@ -63,6 +63,7 @@ body{
 .card-content span{
   font-size: 10px;
   font-weight: 400;
+  margin-left: 5px;
 }
 .card-content h2{
   font-size: 19px;
